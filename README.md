@@ -42,10 +42,8 @@ The hash covers the schema name, its tables, their columns and indexes, and its 
 
 ## Dependencies
 
-- [`Pure.RelationalSchema.HashCodes`](https://github.com/kudima03/Pure.RelationalSchema.HashCodes/tree/3.3.0) — `SchemaHash`, used to derive the PostgreSQL schema name; brings in the `ISchema` abstractions
-- [`Pure.Primitives.Abstractions`](https://github.com/kudima03/Pure.Primitives.Abstractions/tree/4.3.0) — base interfaces for primitive types (`IString`, `IBool`, etc.)
-- [`Pure.Primitives`](https://github.com/kudima03/Pure.Primitives/tree/3.7.0) — concrete primitive type implementations
-- [`Pure.Primitives.String.Operations`](https://github.com/kudima03/Pure.Primitives.String.Operations/tree/1.7.0) — string composition utilities used to build the SQL statement
+- [`Pure.RelationalSchema.HashCodes`](https://github.com/kudima03/Pure.RelationalSchema.HashCodes/tree/3.3.0) — `SchemaHash`, used to derive the PostgreSQL schema name; brings in the `ISchema` and primitive abstractions
+- [`Pure.Primitives.String.Operations`](https://github.com/kudima03/Pure.Primitives.String.Operations/tree/1.7.0) — string composition utilities used to build the SQL statement; brings in `Pure.Primitives`
 
 ## Target Frameworks
 
