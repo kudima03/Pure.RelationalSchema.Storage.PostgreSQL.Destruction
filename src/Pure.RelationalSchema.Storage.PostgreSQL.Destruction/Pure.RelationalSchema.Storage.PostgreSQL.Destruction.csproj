@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>Pure.RelationalSchema.Storage.PostgreSQL.Destruction</PackageId>
+    <RootNamespace>Pure.RelationalSchema.Storage.PostgreSQL.Destruction</RootNamespace>
+    <AssemblyName>Pure.RelationalSchema.Storage.PostgreSQL.Destruction</AssemblyName>
+    <Authors>Dmitry Kurochkin</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/kudima03/Pure.RelationalSchema.Storage.PostgreSQL.Destruction</PackageProjectUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Pure.Primitives.String.Operations" Version="1.7.0" />
+    <PackageReference Include="Pure.RelationalSchema.HashCodes" Version="3.3.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Pure.RelationalSchema.Storage.PostgreSQL.Destruction.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+</Project>
