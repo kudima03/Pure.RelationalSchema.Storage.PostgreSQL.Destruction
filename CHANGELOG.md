@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0-preview.0.2.0] - 2026-11-11
+
+### Added
+
+- Support for .NET 11 (`net11.0`) alongside net8.0, net9.0 and net10.0.
+
+### Changed
+
+- Update `Pure.Primitives.String.Operations` to 1.8.0 and `Pure.RelationalSchema.HashCodes` to 3.4.0.
+
 ## [0.1.0-preview.0.1.0] - 2026-10-26
 
 ### Added
