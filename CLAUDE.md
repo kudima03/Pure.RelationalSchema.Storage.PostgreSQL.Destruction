@@ -45,7 +45,7 @@ CI runs mutation testing via `dotnet-stryker` at `Complete` level with a 100% br
 
 **CI style check:** the `Code style check by csharpier` step in `.github/workflows/build-and-test.yml` is commented out on purpose. csharpier wants `) { }` on one line for chained constructors with an empty body, while `dotnet format` (IDE0055 with `csharp_new_line_before_open_brace = all`) wants `{ }` on its own line, so both cannot pass on `SchemaDropStatement.cs`. `dotnet format` is the authoritative check.
 
-**Multi-targeting:** net8.0, net9.0, net10.0. `IsAotCompatible` is `true` and the build must stay free of IL2026/IL3050 warnings. Do not use `AsQueryable()` in library code (annotated as trim/AOT-unsafe).
+**Multi-targeting:** net8.0, net9.0, net10.0, net11.0. `IsAotCompatible` is `true` and the build must stay free of IL2026/IL3050 warnings. Do not use `AsQueryable()` in library code (annotated as trim/AOT-unsafe).
 
 **Package validation:** `EnablePackageValidation = true` with `PackageValidationBaselineVersion` set to the last published version. Update it after each release so breaking API changes fail the build.
 
